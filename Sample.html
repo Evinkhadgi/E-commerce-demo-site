@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">October<br>Store</div>
+        <ul class="nav-links">
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <div class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#cart" class="cart">Cart <span id="cart-count">0</span></a></li>
+            </div>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <h1>Welcome to ShopEase</h1>
+        <p>Find the best products at unbeatable prices</p>
+        <a href="#products" class="btn">Shop Now</a>
+    </section>
+
+    <section id="products" class="content-section">
+        <h2>Our Products</h2>
+        <div class="product-gallery">
+            <div class="product-card">
+                <img src="https://i.pinimg.com/474x/6a/1d/44/6a1d44a706e350d7ac668530d1f60395.jpg" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>$10.00</p>
+                <button class="btn add-to-cart" data-name="Product 1" data-price="10.00">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://i.pinimg.com/474x/6a/1d/44/6a1d44a706e350d7ac668530d1f60395.jpg" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>$20.00</p>
+                <button class="btn add-to-cart" data-name="Product 2" data-price="20.00">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://i.pinimg.com/474x/6a/1d/44/6a1d44a706e350d7ac668530d1f60395.jpg" alt="Product 3">
+                <h3>Product 3</h3>
+                <p>$30.00</p>
+                <button class="btn add-to-cart" data-name="Product 3" data-price="30.00">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="content-section">
+        <h2>About Us</h2>
+        <p>We are dedicated to providing the best shopping experience for our customers.</p>
+    </section>
+
+    <footer id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@octstore.com | Phone: (123) 456-7890</p>
+        <p>&copy; 2024 oct.Store. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

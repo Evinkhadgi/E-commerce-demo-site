@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  color: #fff;
+  padding: 10px 10%;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links input {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  gap: 1rem;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  padding: 7px 20px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.menu a:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.hero {
+  background: url('https://elementsclothing.co.uk/wp-content/uploads/2021/11/elements.1600.600.homepage.panel_-1536x576.jpg') no-repeat center center/cover;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #ff4757;
+}
+
+.content-section {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.content-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.product-gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.product-card p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+footer {
+  background: #333;
+  color: white;
+  padding: 20px 10%;
+  text-align: center;
+}
+
+footer h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  .menu {
+      flex-direction: column;
+      width: 100%;
+      display: none;
+  }
+
+  .menu li {
+      text-align: center;
+  }
+
+  .menu a {
+      padding: 15px 0;
+  }
+
+  .nav-links input:checked ~ .menu {
+      display: flex;
+  }
+
+  .hamburger {
+      display: block;
+  }
+
+  .product-card {
+      width: 80%;
+      margin: 10px auto;
+  }
+}
